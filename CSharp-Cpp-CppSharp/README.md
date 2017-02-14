@@ -1,6 +1,6 @@
 # C# & C++ CppSharp Example
 
-Same thing as [CSharp-Cpp-InteropExample](https://github.com/m039/CSharpCppInteropExample), but with [CppSharp](https://github.com/mono/CppSharp).
+Same thing as `CSharp-Cpp-InteropExample`, but with [CppSharp](https://github.com/mono/CppSharp).
 
 * `CppLibraryProject` is a core library.
 * `CSharpProjects/CppSharpLibraryGeneratorProject` is used to generate a file with C++ and C# glue.
