@@ -5,4 +5,4 @@
 * `CSharp-Cpp-Interop`
 * `CSharp-Cpp-SWIG`
 
-`CppLibraryProject` almost the same across the projects, I copy-pasted it to make it obvious which differences each approach has.
+`CppLibraryProject` is copy-pasted and slightly modified across the projects, to make it obvious which differences each approach has.
