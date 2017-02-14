@@ -1,6 +1,6 @@
 # Cross-Language Interaction Sandbox
 
-## Examples of cross-language polymorphism using C# and C++
+## Examples of cross-language polymorphism using C♯ and C++
 * `CSharp-Cpp-CppSharp`
 * `CSharp-Cpp-Interop`
 * `CSharp-Cpp-SWIG`
