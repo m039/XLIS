@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSXLExample", "iOSXLExampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidXLExample", "AndroidXLExample\AndroidXLExample.csproj", "{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsXLExample", "WindowsXLExample\WindowsXLExample.csproj", "{FADE12D3-DA18-46A4-950B-285B3B66819D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -67,5 +69,17 @@ Global
 		{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|x86.ActiveCfg = Debug|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|x86.Build.0 = Debug|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|x86.ActiveCfg = Release|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|x86.Build.0 = Release|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhoneSimulator.Build.0 = Debug|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhone.ActiveCfg = Release|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhone.Build.0 = Release|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhoneSimulator.ActiveCfg = Release|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhoneSimulator.Build.0 = Release|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhone.ActiveCfg = Debug|x86
+		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhone.Build.0 = Debug|x86
 	EndGlobalSection
 EndGlobal

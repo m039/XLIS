@@ -1,10 +1,15 @@
-﻿<Properties StartupConfiguration="{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{FADE12D3-DA18-46A4-950B-285B3B66819D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WindowsXLExample/Program.cs">
+    <Files>
+      <File FileName="WindowsXLExample/Program.cs" Line="9" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.WindowsXLExample PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECE13601-753A-4805-BD18-22EFA5898F42" />
   <MonoDevelop.Ide.ItemProperties.AndroidXLExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
