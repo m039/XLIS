@@ -1,9 +1,5 @@
-﻿<Properties StartupConfiguration="{114D6318-06A1-44E0-BE8F-224B484A5756}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOSXLExample/ViewController.cs">
-    <Files>
-      <File FileName="iOSXLExample/ViewController.cs" Line="19" Column="22" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}|Default">
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
@@ -11,5 +7,6 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECE13601-753A-4805-BD18-22EFA5898F42" />
+  <MonoDevelop.Ide.ItemProperties.AndroidXLExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.ItemProperties.MacXLExample PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
