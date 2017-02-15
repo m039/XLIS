@@ -2,24 +2,11 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="CSharpConsoleProject/Bar.cs">
     <Files>
       <File FileName="CSharpConsoleProject/Program.cs" Line="31" Column="14" />
-      <File FileName="CSharpConsoleProject/Init.cs" Line="9" Column="1" />
       <File FileName="CSharpConsoleProject/IBar.cs" Line="1" Column="1" />
       <File FileName="CSharpConsoleProject/Global.cs" Line="8" Column="44" />
       <File FileName="CSharpConsoleProject/Foo.cs" Line="13" Column="1" />
-      <File FileName="CSharpConsoleProject/Bar.cs" Line="43" Column="15" />
+      <File FileName="CSharpConsoleProject/Bar.cs" Line="28" Column="71" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="CSharpConsoleProject" expanded="True">
-            <Node name="CSharpConsoleProject" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Bar.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
