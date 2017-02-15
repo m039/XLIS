@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidXLExample", "Android
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsXLExample", "WindowsXLExample\WindowsXLExample.csproj", "{FADE12D3-DA18-46A4-950B-285B3B66819D}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CppSharpSharedLibrary", "CppSharpSharedLibrary\CppSharpSharedLibrary.shproj", "{B06038E3-38E2-4FF5-ABEA-84DA3EC6700A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86

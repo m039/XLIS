@@ -2,6 +2,7 @@
 
 using AppKit;
 using Foundation;
+using CppSharpLibrary;
 
 namespace MacXLExample
 {
@@ -17,14 +18,7 @@ namespace MacXLExample
 
 			// Do any additional setup after loading the view.
 
-			string a = "0";
-
-			for (int i = 0; i < 100; i++)
-			{
-				a += "123";
-			}
-
-			MainLabel.StringValue = "m039\nm0391";
+			MainLabel.StringValue = XLExample.GetString();
 		}
 
 		public override NSObject RepresentedObject

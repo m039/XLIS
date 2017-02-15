@@ -3645,10 +3645,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "/Users/m039/Projects/CSharpProjects/CppSharpLibrary/CppSharpLibrary.csproj",
+      "projectUniqueName": "/Users/m039/Develop/CLIS/Cpp-Cross-Platform/CSharpProjects/CppSharpLibrary/CppSharpLibrary.csproj",
       "projectName": "CppSharpLibrary",
-      "projectPath": "/Users/m039/Projects/CSharpProjects/CppSharpLibrary/CppSharpLibrary.csproj",
-      "projectJsonPath": "/Users/m039/Projects/CSharpProjects/CppSharpLibrary/project.json",
+      "projectPath": "/Users/m039/Develop/CLIS/Cpp-Cross-Platform/CSharpProjects/CppSharpLibrary/CppSharpLibrary.csproj",
+      "projectJsonPath": "/Users/m039/Develop/CLIS/Cpp-Cross-Platform/CSharpProjects/CppSharpLibrary/project.json",
       "outputType": "UAP"
     },
     "dependencies": {
