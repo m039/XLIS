@@ -2,14 +2,14 @@
 
 * `CppLibrary` is a core library.
 * `CSharpProjects`
-  * `CppSharpSharedLibrary` a wrapper for the core library using [CppSharp](https://github.com/mono/CppSharp)
+  * `CppSharpSharedLibrary` a wrapper for the core library using [CppSharp](https://github.com/mono/CppSharp).
   * `iOSXLExample`
   * `AndroidXLExample`
   * `WindowsXLExample`
   * `MacXLExample`
 * `Precompiled`
 * `Toolchains` is needed for `cmake`.
-* `compile.sh` compiles the core library for all platforms, and move a result to the `Precompiled`.
+* `compile.sh` compiles the core library for all platforms, and move results to the `Precompiled`.
 
 ## Resume
 
