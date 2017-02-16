@@ -7,7 +7,7 @@ Various experiments with programming languages and platforms. All projects was t
 * `CSharp-Cpp-Interop`
 * `CSharp-Cpp-SWIG`
 
-## Example of using C++ with different platforms
+## Example in multiplatform environment
 * `Cpp-Cross-Platform` - example of using C++ with C# on iOS, Android, Windows and Mac.
 
 ## Commentary
