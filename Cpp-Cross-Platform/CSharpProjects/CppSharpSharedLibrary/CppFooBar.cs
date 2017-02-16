@@ -7,6 +7,7 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Security;
+using ObjCRuntime;
 
 namespace CppFooBar
 {
@@ -238,6 +239,7 @@ namespace CppFooBar
         // int GetNumber() = 0
         private static Delegates.Func_int_IntPtr _GetNumber_0DelegateInstance;
 
+		[MonoPInvokeCallback(typeof(Delegates.Func_int_IntPtr))]
         private static int _GetNumber_0DelegateHook(global::System.IntPtr instance)
         {
             if (!NativeToManagedMap.ContainsKey(instance))
@@ -253,6 +255,7 @@ namespace CppFooBar
         // virtual ~IBar()
         private static Delegates.Action_IntPtr _dtor_0DelegateInstance;
 
+		[MonoPInvokeCallback(typeof(Delegates.Action_IntPtr))]
         private static void _dtor_0DelegateHook(global::System.IntPtr instance)
         {
             if (!NativeToManagedMap.ContainsKey(instance))
@@ -490,10 +493,10 @@ namespace CppFooBar
 
     namespace Delegates
     {
-        [ObjCRuntime.MonoNativeFunctionWrapper, SuppressUnmanagedCodeSecurity, UnmanagedFunctionPointerAttribute(global::System.Runtime.InteropServices.CallingConvention.Cdecl)]
+        [SuppressUnmanagedCodeSecurity, UnmanagedFunctionPointerAttribute(global::System.Runtime.InteropServices.CallingConvention.Cdecl)]
         internal unsafe delegate int Func_int_IntPtr(global::System.IntPtr instance);
 
-        [ObjCRuntime.MonoNativeFunctionWrapper, SuppressUnmanagedCodeSecurity, UnmanagedFunctionPointerAttribute(global::System.Runtime.InteropServices.CallingConvention.Cdecl)]
+        [SuppressUnmanagedCodeSecurity, UnmanagedFunctionPointerAttribute(global::System.Runtime.InteropServices.CallingConvention.Cdecl)]
         internal unsafe delegate void Action_IntPtr(global::System.IntPtr instance);
     }
 }
