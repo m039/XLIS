@@ -1,19 +1,12 @@
 ﻿<Properties StartupConfiguration="{ACF0E98E-A08D-470C-9548-9306C439099B}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="WindowsXLExample/Program.cs">
     <Files>
-      <File FileName="WindowsXLExample/Program.cs" Line="9" Column="4" />
+      <File FileName="WindowsXLExample/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CSharpProjects" expanded="True">
-            <Node name="CppSharpSharedLibrary" expanded="True" />
-            <Node name="WindowsXLExample" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
+          <Node name="CSharpProjects" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
