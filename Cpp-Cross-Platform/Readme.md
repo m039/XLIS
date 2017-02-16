@@ -1,5 +1,7 @@
 # C++ in multiplatform environment
 
+Examples of using C++ and C# with Xamarin.
+
 * `CppLibrary` is a core library.
 * `CSharpProjects`
   * `CppSharpSharedLibrary` a wrapper for the core library using [CppSharp](https://github.com/mono/CppSharp).
