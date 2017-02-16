@@ -1,6 +1,7 @@
 ﻿using System;
 
 using UIKit;
+using CppSharpLibrary;
 
 namespace iOSXLExample
 {
@@ -16,7 +17,7 @@ namespace iOSXLExample
 			base.ViewDidLoad();
 			// Perform any additional setup after loading the view, typically from a nib.
 
-			MainLabel.Text = "Hello\nm039!";
+			MainLabel.Text = XLExample.GetString();
 		}
 
 		public override void DidReceiveMemoryWarning()

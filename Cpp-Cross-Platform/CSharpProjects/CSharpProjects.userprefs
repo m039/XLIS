@@ -1,32 +1,17 @@
-﻿<Properties StartupConfiguration="{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CppSharpSharedLibrary/CppFooBar.cs">
+﻿<Properties StartupConfiguration="{114D6318-06A1-44E0-BE8F-224B484A5756}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CppSharpSharedLibrary/XLExample.cs">
     <Files>
-      <File FileName="CppSharpSharedLibrary/CppFooBar.cs" Line="87" Column="1" />
+      <File FileName="CppSharpSharedLibrary/XLExample.cs" Line="53" Column="28" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="CSharpProjects" expanded="True">
-            <Node name="CppSharpSharedLibrary" expanded="True" />
-            <Node name="MacXLExample" expanded="True">
-              <Node name="NativeReferenceFolder" expanded="True">
-                <Node name="NativeReference" selected="True" />
-              </Node>
-            </Node>
-            <Node name="WindowsXLExample" expanded="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WindowsXLExample PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECE13601-753A-4805-BD18-22EFA5898F42" />
+  <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.8ada5c64f6596b749c39ed0d6550c3996d76f647" />
   <MonoDevelop.Ide.ItemProperties.AndroidXLExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.ItemProperties.MacXLExample PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

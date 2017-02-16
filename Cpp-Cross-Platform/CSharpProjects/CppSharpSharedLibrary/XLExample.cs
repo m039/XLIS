@@ -1,4 +1,5 @@
-﻿using CppFooBar;
+﻿
+using System;
 
 namespace CppSharpLibrary
 {
@@ -6,7 +7,7 @@ namespace CppSharpLibrary
 	{
 		public static string TestFoo()
 		{
-			var foo = new Foo();
+			var foo = new CppFooBar.Foo();
 			var s = string.Empty;
 
 			s += "== Foo ==\n";
@@ -20,7 +21,7 @@ namespace CppSharpLibrary
 			return s;
 		}
 
-		private class BarImpl : IBar
+		private class BarImpl : CppFooBar.IBar
 		{
 			public override int Number
 			{
@@ -33,7 +34,7 @@ namespace CppSharpLibrary
 
 		public static string TestBar()
 		{
-			var bar = new Bar();
+			var bar = new CppFooBar.Bar();
 			var s = string.Empty;
 
 			s += "== Bar ==\n";
