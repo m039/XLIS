@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{114D6318-06A1-44E0-BE8F-224B484A5756}|Default">
+﻿<Properties StartupConfiguration="{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}|Default">
   <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -7,7 +7,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WindowsXLExample PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.8ada5c64f6596b749c39ed0d6550c3996d76f647" />
   <MonoDevelop.Ide.ItemProperties.AndroidXLExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.MacXLExample PreferredExecutionTarget="MonoDevelop.Default" />
+  <DisabledProjects>
+    <String>iOSXLExample/iOSXLExample.csproj</String>
+    <String>MacXLExample/MacXLExample.csproj</String>
+  </DisabledProjects>
 </Properties>

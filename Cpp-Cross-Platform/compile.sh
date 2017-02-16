@@ -8,10 +8,7 @@ TOOLCHAINS=$(pwd)/Toolchains
 POLLY=$TOOLCHAINS/polly
 LIBNAME=CppFooBar
 
-rm -rf build
-rm -rf $PRECOMPILED
-
-function build_macos_lib() {
+function macos_lib_build_command() {
     echo Bulding MacOS lib
 
     cmake $CPP_LIBRARY\
@@ -20,7 +17,7 @@ function build_macos_lib() {
     make all install
 }
 
-function build_ios_lib() {
+function ios_lib_build_command() {
     echo Bulding iOS lib
 
     cmake $CPP_LIBRARY\
@@ -54,6 +51,10 @@ function build_ios_lib() {
     rm -f $DESTDIR/lib${LIBNAME}-iphone*.a
 }
 
+function android_lib_build_command() {
+    echo Building Andorid lib
+}
+
 function build() {
     PROMPT="$0"
     PLATFORM="$1"
@@ -72,7 +73,12 @@ function build() {
     popd
 }
 
-build Mac build_macos_lib
-build iOS build_ios_lib
+rm -rf build
+# rm -rf $PRECOMPILED
+
+# build Mac macos_lib_build_command
+# build iOS ios_lib_build_command
+build Android android_lib_build_command
 
 # rm -rf build
+
