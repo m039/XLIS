@@ -15,7 +15,7 @@ namespace AndroidXLExample
 			SetContentView(Resource.Layout.Main);
 
 			FindViewById<TextView>(Resource.Id.main_label)
-				.Text = "Hello,\nm039!";
+				.Text = CppSharpLibrary.XLExample.GetString();
 		}
 	}
 }

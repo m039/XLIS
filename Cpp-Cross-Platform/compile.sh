@@ -12,9 +12,10 @@ function macos_lib_build_command() {
     echo Bulding MacOS lib
 
     cmake $CPP_LIBRARY\
-          -DCMAKE_INSTALL_PREFIX=$DESTDIR
+          -DCMAKE_INSTALL_PREFIX=$DESTDIR\
+          -DCMAKE_DEBUG_POSTFIX=""
 
-    make all install
+    cmake --build . --target install
 }
 
 function ios_lib_build_command() {
@@ -22,27 +23,26 @@ function ios_lib_build_command() {
 
     cmake $CPP_LIBRARY\
           -DCMAKE_INSTALL_PREFIX=$DESTDIR\
+          -DCMAKE_DEBUG_POSTFIX=""\
           -DLIBRARY_TYPE=STATIC\
           -DCMAKE_TOOLCHAIN_FILE=$POLLY/ios-10-2.cmake\
           -G Xcode
 
-    xcodebuild -project ${LIBNAME}Library.xcodeproj\
-               -alltargets\
-               -configuration Release\
-               -sdk iphoneos\
-               ONLY_ACTIVE_ARCH=NO\
-               clean build
+    cmake --build .\
+          --target install\
+          -- \
+          ONLY_ACTIVE_ARCH=NO\
+          -sdk iphoneos
 
-    mv $DESTDIR/lib${LIBNAME}.a $PRECOMPILED/iOS/lib${LIBNAME}-iphoneos.a
+    mv $DESTDIR/lib${LIBNAME}.a $DESTDIR/lib${LIBNAME}-iphoneos.a
 
-    xcodebuild -project ${LIBNAME}Library.xcodeproj\
-               -alltargets\
-               -configuration Release\
-               -sdk iphonesimulator\
-               ONLY_ACTIVE_ARCH=NO\
-               clean build
+    cmake --build .\
+          --target install\
+          -- \
+          ONLY_ACTIVE_ARCH=NO\
+          -sdk iphonesimulator
 
-    mv $DESTDIR/lib${LIBNAME}.a $PRECOMPILED/iOS/lib${LIBNAME}-iphonesimulator.a
+    mv $DESTDIR/lib${LIBNAME}.a $DESTDIR/lib${LIBNAME}-iphonesimulator.a
 
     lipo -create -output $DESTDIR/lib${LIBNAME}.a\
          $DESTDIR/lib${LIBNAME}-iphonesimulator.a\
@@ -53,6 +53,31 @@ function ios_lib_build_command() {
 
 function android_lib_build_command() {
     echo Building Andorid lib
+
+    for target in x86 armeabi-v7a
+    do
+        rm -rf *
+
+        cmake $CPP_LIBRARY\
+              -DCMAKE_INSTALL_PREFIX=$DESTDIR/$target\
+              -DCMAKE_DEBUG_POSTFIX=""\
+              -DCMAKE_TOOLCHAIN_FILE=$POLLY/android-ndk-r11c-api-21-$target.cmake
+
+        cmake --build . --target install
+    done
+}
+
+function windows_lib_build_command() {
+    echo Building Windows lib
+
+    echo $MINGW_PREFIX
+
+    cmake $CPP_LIBRARY\
+          -DCMAKE_INSTALL_PREFIX=$DESTDIR/$target\
+          -DCMAKE_DEBUG_POSTFIX=""\
+          -DCMAKE_TOOLCHAIN_FILE=$TOOLCHAINS/mingw.toolchain.cmake
+
+    cmake --build . --target install
 }
 
 function build() {
@@ -74,11 +99,12 @@ function build() {
 }
 
 rm -rf build
-# rm -rf $PRECOMPILED
+rm -rf $PRECOMPILED
 
-# build Mac macos_lib_build_command
-# build iOS ios_lib_build_command
+build Mac macos_lib_build_command
+build iOS ios_lib_build_command
 build Android android_lib_build_command
+build Windows windows_lib_build_command
 
-# rm -rf build
+rm -rf build
 

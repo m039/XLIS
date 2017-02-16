@@ -7,7 +7,6 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Security;
-using ObjCRuntime;
 
 namespace CppFooBar
 {
@@ -20,251 +19,255 @@ namespace CppFooBar
 #endif
 	}
 
-    public unsafe partial class Foo : IDisposable
-    {
-        [StructLayout(LayoutKind.Explicit, Size = 4)]
-        public partial struct __Internal
-        {
-            [FieldOffset(0)]
-            public int number;
+	public unsafe partial class Foo : IDisposable
+	{
+		[StructLayout(LayoutKind.Explicit, Size = 4)]
+		public partial struct __Internal
+		{
+			[FieldOffset(0)]
+			public int number;
 
-            [SuppressUnmanagedCodeSecurity]
+			[SuppressUnmanagedCodeSecurity]
 			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-                EntryPoint="_ZN3FooC2Ev")]
-            internal static extern void ctor_0(global::System.IntPtr instance);
+				EntryPoint = "_ZN3FooC2Ev")]
+			internal static extern void ctor_0(global::System.IntPtr instance);
 
-            //[SuppressUnmanagedCodeSecurity]
-            //[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-            //    EntryPoint="_ZN3FooC2ERKS_")]
-            //internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
+			//[SuppressUnmanagedCodeSecurity]
+			//[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+			//    EntryPoint="_ZN3FooC2ERKS_")]
+			//internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
 
-            [SuppressUnmanagedCodeSecurity]
-            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-                EntryPoint="_ZN3FooD2Ev")]
-            internal static extern void dtor_0(global::System.IntPtr instance);
+			[SuppressUnmanagedCodeSecurity]
+			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+				EntryPoint = "_ZN3FooD2Ev")]
+			internal static extern void dtor_0(global::System.IntPtr instance);
 
-            [SuppressUnmanagedCodeSecurity]
-            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-                EntryPoint="_ZN3Foo9GetNumberEv")]
-            internal static extern int Number_0(global::System.IntPtr instance);
+			[SuppressUnmanagedCodeSecurity]
+			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+				EntryPoint = "_ZN3Foo9GetNumberEv")]
+			internal static extern int Number_0(global::System.IntPtr instance);
 
-            [SuppressUnmanagedCodeSecurity]
-            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-                EntryPoint="_ZN3Foo9SetNumberEi")]
-            internal static extern void SetNumber_0(global::System.IntPtr instance, int number);
-        }
+			[SuppressUnmanagedCodeSecurity]
+			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+				EntryPoint = "_ZN3Foo9SetNumberEi")]
+			internal static extern void SetNumber_0(global::System.IntPtr instance, int number);
+		}
 
-        public global::System.IntPtr __Instance { get; protected set; }
+		public global::System.IntPtr __Instance { get; protected set; }
 
-        protected int __PointerAdjustment;
-        internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, Foo> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, Foo>();
-        protected void*[] __OriginalVTables;
+		protected int __PointerAdjustment;
+		internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, Foo> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, Foo>();
+		protected void*[] __OriginalVTables;
 
-        protected bool __ownsNativeInstance;
+		protected bool __ownsNativeInstance;
 
-        internal static Foo __CreateInstance(global::System.IntPtr native, bool skipVTables = false)
-        {
-            return new Foo(native.ToPointer(), skipVTables);
-        }
+		internal static Foo __CreateInstance(global::System.IntPtr native, bool skipVTables = false)
+		{
+			return new Foo(native.ToPointer(), skipVTables);
+		}
 
-        internal static Foo __CreateInstance(__Internal native, bool skipVTables = false)
-        {
-            return new Foo(native, skipVTables);
-        }
+		internal static Foo __CreateInstance(__Internal native, bool skipVTables = false)
+		{
+			return new Foo(native, skipVTables);
+		}
 
-        private static void* __CopyValue(__Internal native)
-        {
-            var ret = Marshal.AllocHGlobal(4);
-            *(__Internal*) ret = native;
-            return ret.ToPointer();
-        }
+		private static void* __CopyValue(__Internal native)
+		{
+			var ret = Marshal.AllocHGlobal(4);
+			*(__Internal*)ret = native;
+			return ret.ToPointer();
+		}
 
-        private Foo(__Internal native, bool skipVTables = false)
-            : this(__CopyValue(native), skipVTables)
-        {
-            __ownsNativeInstance = true;
-            NativeToManagedMap[__Instance] = this;
-        }
+		private Foo(__Internal native, bool skipVTables = false)
+			: this(__CopyValue(native), skipVTables)
+		{
+			__ownsNativeInstance = true;
+			NativeToManagedMap[__Instance] = this;
+		}
 
-        protected Foo(void* native, bool skipVTables = false)
-        {
-            if (native == null)
-                return;
-            __Instance = new global::System.IntPtr(native);
-        }
+		protected Foo(void* native, bool skipVTables = false)
+		{
+			if (native == null)
+				return;
+			__Instance = new global::System.IntPtr(native);
+		}
 
-        public Foo()
-        {
-            __Instance = Marshal.AllocHGlobal(4);
-            __ownsNativeInstance = true;
-            NativeToManagedMap[__Instance] = this;
-            __Internal.ctor_0((__Instance + __PointerAdjustment));
-        }
+		public Foo()
+		{
+			__Instance = Marshal.AllocHGlobal(4);
+			__ownsNativeInstance = true;
+			NativeToManagedMap[__Instance] = this;
+			__Internal.ctor_0((__Instance + __PointerAdjustment));
+		}
 
-        public Foo(Foo _0)
-        {
-            __Instance = Marshal.AllocHGlobal(4);
-            __ownsNativeInstance = true;
-            NativeToManagedMap[__Instance] = this;
-            *((__Internal*) __Instance) = *((__Internal*) _0.__Instance);
-        }
+		public Foo(Foo _0)
+		{
+			__Instance = Marshal.AllocHGlobal(4);
+			__ownsNativeInstance = true;
+			NativeToManagedMap[__Instance] = this;
+			*((__Internal*)__Instance) = *((__Internal*)_0.__Instance);
+		}
 
-        public void Dispose()
-        {
-            Dispose(disposing: true);
-        }
+		public void Dispose()
+		{
+			Dispose(disposing: true);
+		}
 
-        public virtual void Dispose(bool disposing)
-        {
-            Foo __dummy;
-            NativeToManagedMap.TryRemove(__Instance, out __dummy);
-            if (disposing)
-                __Internal.dtor_0((__Instance + __PointerAdjustment));
-            if (__ownsNativeInstance)
-                Marshal.FreeHGlobal(__Instance);
-        }
+		public virtual void Dispose(bool disposing)
+		{
+			Foo __dummy;
+			NativeToManagedMap.TryRemove(__Instance, out __dummy);
+			if (disposing)
+				__Internal.dtor_0((__Instance + __PointerAdjustment));
+			if (__ownsNativeInstance)
+				Marshal.FreeHGlobal(__Instance);
+		}
 
-        public int Number
-        {
-            get
-            {
-                var __ret = __Internal.Number_0((__Instance + __PointerAdjustment));
-                return __ret;
-            }
+		public int Number
+		{
+			get
+			{
+				var __ret = __Internal.Number_0((__Instance + __PointerAdjustment));
+				return __ret;
+			}
 
-            set
-            {
-                __Internal.SetNumber_0((__Instance + __PointerAdjustment), value);
-            }
-        }
-    }
+			set
+			{
+				__Internal.SetNumber_0((__Instance + __PointerAdjustment), value);
+			}
+		}
+	}
 
-    public unsafe abstract partial class IBar : IDisposable
-    {
-        [StructLayout(LayoutKind.Explicit, Size = 8)]
-        public partial struct __Internal
-        {
-            [FieldOffset(0)]
-            public global::System.IntPtr vptr_IBar;
+	public unsafe abstract partial class IBar : IDisposable
+	{
+		[StructLayout(LayoutKind.Explicit, Size = 8)]
+		public partial struct __Internal
+		{
+			[FieldOffset(0)]
+			public global::System.IntPtr vptr_IBar;
 
-            [SuppressUnmanagedCodeSecurity]
-            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-                EntryPoint="_ZN4IBarC2Ev")]
-            internal static extern void ctor_0(global::System.IntPtr instance);
+			[SuppressUnmanagedCodeSecurity]
+			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+				EntryPoint = "_ZN4IBarC2Ev")]
+			internal static extern void ctor_0(global::System.IntPtr instance);
 
-            //[SuppressUnmanagedCodeSecurity]
-            //[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-            //    EntryPoint="_ZN4IBarC2ERKS_")]
-            //internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
+			//[SuppressUnmanagedCodeSecurity]
+			//[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+			//    EntryPoint="_ZN4IBarC2ERKS_")]
+			//internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
 
-            [SuppressUnmanagedCodeSecurity]
-            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
-                EntryPoint="_ZN4IBarD2Ev")]
-            internal static extern void dtor_0(global::System.IntPtr instance);
-        }
+			[SuppressUnmanagedCodeSecurity]
+			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+				EntryPoint = "_ZN4IBarD2Ev")]
+			internal static extern void dtor_0(global::System.IntPtr instance);
+		}
 
-        public global::System.IntPtr __Instance { get; protected set; }
+		public global::System.IntPtr __Instance { get; protected set; }
 
-        protected int __PointerAdjustment;
-        internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, IBar> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, IBar>();
-        protected void*[] __OriginalVTables;
+		protected int __PointerAdjustment;
+		internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, IBar> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, IBar>();
+		protected void*[] __OriginalVTables;
 
-        protected bool __ownsNativeInstance;
+		protected bool __ownsNativeInstance;
 
-        internal static IBar __CreateInstance(global::System.IntPtr native, bool skipVTables = false)
-        {
-            return new IBarInternal(native.ToPointer(), skipVTables);
-        }
+		internal static IBar __CreateInstance(global::System.IntPtr native, bool skipVTables = false)
+		{
+			return new IBarInternal(native.ToPointer(), skipVTables);
+		}
 
-        internal static IBar __CreateInstance(__Internal native, bool skipVTables = false)
-        {
-            return new IBarInternal(native, skipVTables);
-        }
+		internal static IBar __CreateInstance(__Internal native, bool skipVTables = false)
+		{
+			return new IBarInternal(native, skipVTables);
+		}
 
-        protected IBar(void* native, bool skipVTables = false)
-        {
-            if (native == null)
-                return;
-            __Instance = new global::System.IntPtr(native);
-            if (skipVTables)
-                __OriginalVTables = new void*[] { ((__Internal*) native)->vptr_IBar.ToPointer() };
-            else
-                SetupVTables(true);
-        }
+		protected IBar(void* native, bool skipVTables = false)
+		{
+			if (native == null)
+				return;
+			__Instance = new global::System.IntPtr(native);
+			if (skipVTables)
+				__OriginalVTables = new void*[] { ((__Internal*)native)->vptr_IBar.ToPointer() };
+			else
+				SetupVTables(true);
+		}
 
-        protected IBar()
-        {
-            __Instance = Marshal.AllocHGlobal(8);
-            __ownsNativeInstance = true;
-            NativeToManagedMap[__Instance] = this;
-            __Internal.ctor_0((__Instance + __PointerAdjustment));
-            SetupVTables(GetType().FullName == "CppFooBar.IBar");
-        }
+		protected IBar()
+		{
+			__Instance = Marshal.AllocHGlobal(8);
+			__ownsNativeInstance = true;
+			NativeToManagedMap[__Instance] = this;
+			__Internal.ctor_0((__Instance + __PointerAdjustment));
+			SetupVTables(GetType().FullName == "CppFooBar.IBar");
+		}
 
-        //protected IBar(IBar _0)
-        //{
-        //    __Instance = Marshal.AllocHGlobal(8);
-        //    __ownsNativeInstance = true;
-        //    NativeToManagedMap[__Instance] = this;
-        //    if (ReferenceEquals(_0, null))
-        //        throw new global::System.ArgumentNullException("_0", "Cannot be null because it is a C++ reference (&).");
-        //    var __arg0 = _0.__Instance;
-        //    __Internal.cctor_1((__Instance + __PointerAdjustment), __arg0);
-        //    SetupVTables(GetType().FullName == "CppFooBar.IBar");
-        //}
+		//protected IBar(IBar _0)
+		//{
+		//    __Instance = Marshal.AllocHGlobal(8);
+		//    __ownsNativeInstance = true;
+		//    NativeToManagedMap[__Instance] = this;
+		//    if (ReferenceEquals(_0, null))
+		//        throw new global::System.ArgumentNullException("_0", "Cannot be null because it is a C++ reference (&).");
+		//    var __arg0 = _0.__Instance;
+		//    __Internal.cctor_1((__Instance + __PointerAdjustment), __arg0);
+		//    SetupVTables(GetType().FullName == "CppFooBar.IBar");
+		//}
 
-        public void Dispose()
-        {
-            Dispose(disposing: true);
-        }
+		public void Dispose()
+		{
+			Dispose(disposing: true);
+		}
 
-        public virtual void Dispose(bool disposing)
-        {
-            IBar __dummy;
-            NativeToManagedMap.TryRemove(__Instance, out __dummy);
-            ((IBar.__Internal*) __Instance)->vptr_IBar = new global::System.IntPtr(__OriginalVTables[0]);
-            if (disposing)
-            {
-                var __slot = *(void**) ((IntPtr) __OriginalVTables[0] + 1 * 8);
-                if (__slot != null)
-                {
-                    var ___dtor_0Delegate = (Delegates.Action_IntPtr) Marshal.GetDelegateForFunctionPointer(new IntPtr(__slot), typeof(Delegates.Action_IntPtr));
-                    ___dtor_0Delegate((__Instance + __PointerAdjustment));
-                }
-                else
-                    __Internal.dtor_0((__Instance + __PointerAdjustment));
-            }
-            if (__ownsNativeInstance)
-                Marshal.FreeHGlobal(__Instance);
-        }
+		public virtual void Dispose(bool disposing)
+		{
+			IBar __dummy;
+			NativeToManagedMap.TryRemove(__Instance, out __dummy);
+			((IBar.__Internal*)__Instance)->vptr_IBar = new global::System.IntPtr(__OriginalVTables[0]);
+			if (disposing)
+			{
+				var __slot = *(void**)((IntPtr)__OriginalVTables[0] + 1 * 8);
+				if (__slot != null)
+				{
+					var ___dtor_0Delegate = (Delegates.Action_IntPtr)Marshal.GetDelegateForFunctionPointer(new IntPtr(__slot), typeof(Delegates.Action_IntPtr));
+					___dtor_0Delegate((__Instance + __PointerAdjustment));
+				}
+				else
+					__Internal.dtor_0((__Instance + __PointerAdjustment));
+			}
+			if (__ownsNativeInstance)
+				Marshal.FreeHGlobal(__Instance);
+		}
 
-        public abstract int Number
-        {
-            get;
-        }
+		public abstract int Number
+		{
+			get;
+		}
 
-        #region Virtual table interop
+		#region Virtual table interop
 
-        // int GetNumber() = 0
-        private static Delegates.Func_int_IntPtr _GetNumber_0DelegateInstance;
+		// int GetNumber() = 0
+		private static Delegates.Func_int_IntPtr _GetNumber_0DelegateInstance;
 
-		[MonoPInvokeCallback(typeof(Delegates.Func_int_IntPtr))]
-        private static int _GetNumber_0DelegateHook(global::System.IntPtr instance)
-        {
-            if (!NativeToManagedMap.ContainsKey(instance))
-                throw new global::System.Exception("No managed instance was found");
+#if __IOS__
+		[ObjCRuntime.MonoPInvokeCallback(typeof(Delegates.Func_int_IntPtr))]
+#endif
+		private static int _GetNumber_0DelegateHook(global::System.IntPtr instance)
+		{
+			if (!NativeToManagedMap.ContainsKey(instance))
+				throw new global::System.Exception("No managed instance was found");
 
-            var __target = (IBar) NativeToManagedMap[instance];
-            if (__target.__ownsNativeInstance)
-                __target.SetupVTables();
-            var __ret = __target.Number;
-            return __ret;
-        }
+			var __target = (IBar)NativeToManagedMap[instance];
+			if (__target.__ownsNativeInstance)
+				__target.SetupVTables();
+			var __ret = __target.Number;
+			return __ret;
+		}
 
-        // virtual ~IBar()
-        private static Delegates.Action_IntPtr _dtor_0DelegateInstance;
+		// virtual ~IBar()
+		private static Delegates.Action_IntPtr _dtor_0DelegateInstance;
 
-		[MonoPInvokeCallback(typeof(Delegates.Action_IntPtr))]
+#if __IOS__
+		[ObjCRuntime.MonoPInvokeCallback(typeof(Delegates.Action_IntPtr))]
+#endif
         private static void _dtor_0DelegateHook(global::System.IntPtr instance)
         {
             if (!NativeToManagedMap.ContainsKey(instance))

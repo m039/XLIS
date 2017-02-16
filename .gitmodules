@@ -1,6 +1,3 @@
-[submodule "Cpp-Cross-Platform/Toolchains/android-cmake"]
-	path = Cpp-Cross-Platform/Toolchains/android-cmake
-	url = https://github.com/taka-no-me/android-cmake.git
 [submodule "Cpp-Cross-Platform/Toolchains/polly"]
 	path = Cpp-Cross-Platform/Toolchains/polly
 	url = https://github.com/ruslo/polly.git

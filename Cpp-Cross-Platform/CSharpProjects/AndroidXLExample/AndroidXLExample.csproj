@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>AndroidXLExample</RootNamespace>
     <AssemblyName>AndroidXLExample</AssemblyName>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -28,6 +28,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <AndroidSupportedAbis>arm64-v8a;armeabi;armeabi-v7a;x86</AndroidSupportedAbis>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +39,7 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,6 +68,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
+    <Folder Include="lib\x86\" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="lib\x86\libCppFooBar.so" />
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\libCppFooBar.so" />
+  </ItemGroup>
+  <Import Project="..\CppSharpSharedLibrary\CppSharpSharedLibrary.projitems" Label="Shared" Condition="Exists('..\CppSharpSharedLibrary\CppSharpSharedLibrary.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
