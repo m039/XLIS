@@ -1,19 +1,13 @@
 ﻿<Properties StartupConfiguration="{114D6318-06A1-44E0-BE8F-224B484A5756}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CppSharpSharedLibrary/CppFooBar.cs">
-    <Files>
-      <File FileName="CppSharpSharedLibrary/XLExample.cs" Line="53" Column="28" />
-      <File FileName="CppSharpSharedLibrary/CppFooBar.cs" Line="10" Column="19" />
-      <File FileName="CppSharpSharedLibrary/SwigFooBarPINVOKE.cs" Line="12" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WindowsXLExample PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.ECE13601-753A-4805-BD18-22EFA5898F42" />
+  <MonoDevelop.Ide.ItemProperties.iOSXLExample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.8ada5c64f6596b749c39ed0d6550c3996d76f647" />
   <MonoDevelop.Ide.ItemProperties.AndroidXLExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" />
   <MonoDevelop.Ide.ItemProperties.MacXLExample PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

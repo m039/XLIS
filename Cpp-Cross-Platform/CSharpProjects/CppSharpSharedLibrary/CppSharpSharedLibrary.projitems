@@ -10,11 +10,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)XLExample.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Bar.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Foo.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)IBar.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SwigFooBar.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SwigFooBarPINVOKE.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CppFooBar.cs" />
   </ItemGroup>
 </Project>

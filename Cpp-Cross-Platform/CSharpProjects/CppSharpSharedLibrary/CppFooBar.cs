@@ -11,6 +11,15 @@ using ObjCRuntime;
 
 namespace CppFooBar
 {
+	public static class Global
+	{
+#if __IOS__
+		public const string DllName = "__Internal";
+#else
+		public const string DllName = "CppFooBar";
+#endif
+	}
+
     public unsafe partial class Foo : IDisposable
     {
         [StructLayout(LayoutKind.Explicit, Size = 4)]
@@ -20,27 +29,27 @@ namespace CppFooBar
             public int number;
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+			[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3FooC2Ev")]
             internal static extern void ctor_0(global::System.IntPtr instance);
 
             //[SuppressUnmanagedCodeSecurity]
-            //[DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            //[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
             //    EntryPoint="_ZN3FooC2ERKS_")]
             //internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3FooD2Ev")]
             internal static extern void dtor_0(global::System.IntPtr instance);
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3Foo9GetNumberEv")]
             internal static extern int Number_0(global::System.IntPtr instance);
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3Foo9SetNumberEi")]
             internal static extern void SetNumber_0(global::System.IntPtr instance, int number);
         }
@@ -139,17 +148,17 @@ namespace CppFooBar
             public global::System.IntPtr vptr_IBar;
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN4IBarC2Ev")]
             internal static extern void ctor_0(global::System.IntPtr instance);
 
             //[SuppressUnmanagedCodeSecurity]
-            //[DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            //[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
             //    EntryPoint="_ZN4IBarC2ERKS_")]
             //internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN4IBarD2Ev")]
             internal static extern void dtor_0(global::System.IntPtr instance);
         }
@@ -372,22 +381,22 @@ namespace CppFooBar
             public global::System.IntPtr impl;
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3BarC2Ev")]
             internal static extern void ctor_0(global::System.IntPtr instance);
 
             //[SuppressUnmanagedCodeSecurity]
-            //[DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            //[DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
             //    EntryPoint="_ZN3BarC2ERKS_")]
             //internal static extern void cctor_1(global::System.IntPtr instance, global::System.IntPtr _0);
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3Bar8RegisterEP4IBar")]
             internal static extern void Register_0(global::System.IntPtr instance, global::System.IntPtr impl);
 
             [SuppressUnmanagedCodeSecurity]
-            [DllImport("__Internal", CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
+            [DllImport(Global.DllName, CallingConvention = global::System.Runtime.InteropServices.CallingConvention.Cdecl,
                 EntryPoint="_ZN3Bar16PerformGetNumberEv")]
             internal static extern int PerformGetNumber_0(global::System.IntPtr instance);
         }

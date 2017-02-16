@@ -35,11 +35,5 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CppSharpLibrary\CppSharpLibrary.csproj">
-      <Project>{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}</Project>
-      <Name>CppSharpLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

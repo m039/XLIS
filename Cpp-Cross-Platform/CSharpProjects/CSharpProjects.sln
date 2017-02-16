@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacXLExample", "MacXLExample\MacXLExample.csproj", "{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CppSharpLibrary", "CppSharpLibrary\CppSharpLibrary.csproj", "{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSXLExample", "iOSXLExample\iOSXLExample.csproj", "{114D6318-06A1-44E0-BE8F-224B484A5756}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidXLExample", "AndroidXLExample\AndroidXLExample.csproj", "{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}"
@@ -35,18 +33,6 @@ Global
 		{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}.Release|iPhoneSimulator.Build.0 = Release|x86
 		{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}.Debug|iPhone.ActiveCfg = Debug|x86
 		{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}.Debug|iPhone.Build.0 = Debug|x86
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Debug|x86.Build.0 = Debug|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Release|x86.ActiveCfg = Release|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Release|x86.Build.0 = Release|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Release|iPhone.Build.0 = Release|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{4188EDEA-AD5A-4BB1-A95A-6EA44928DAF8}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{114D6318-06A1-44E0-BE8F-224B484A5756}.Debug|x86.ActiveCfg = Debug|iPhoneSimulator
 		{114D6318-06A1-44E0-BE8F-224B484A5756}.Debug|x86.Build.0 = Debug|iPhoneSimulator
 		{114D6318-06A1-44E0-BE8F-224B484A5756}.Release|x86.ActiveCfg = Release|iPhone
