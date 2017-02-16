@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace WindowsXLExample
 {
@@ -6,7 +7,7 @@ namespace WindowsXLExample
 	{
 		public static void Main(string[] args)
 		{
-			Console.WriteLine("Hello\nWorld!");
+			Console.WriteLine(CppSharpLibrary.XLExample.GetString());
 		}
 	}
 }

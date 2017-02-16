@@ -1,5 +1,23 @@
-﻿<Properties StartupConfiguration="{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}|Default">
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{ACF0E98E-A08D-470C-9548-9306C439099B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WindowsXLExample/Program.cs">
+    <Files>
+      <File FileName="WindowsXLExample/Program.cs" Line="9" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CSharpProjects" expanded="True">
+            <Node name="CppSharpSharedLibrary" expanded="True" />
+            <Node name="WindowsXLExample" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
@@ -7,9 +25,4 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WindowsXLExample PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AndroidXLExample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.059a4078" />
-  <DisabledProjects>
-    <String>iOSXLExample/iOSXLExample.csproj</String>
-    <String>MacXLExample/MacXLExample.csproj</String>
-  </DisabledProjects>
 </Properties>

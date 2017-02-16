@@ -1,15 +1,15 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CppSharpSharedLibrary", "CppSharpSharedLibrary\CppSharpSharedLibrary.shproj", "{B06038E3-38E2-4FF5-ABEA-84DA3EC6700A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsXLExample", "WindowsXLExample\WindowsXLExample.csproj", "{ACF0E98E-A08D-470C-9548-9306C439099B}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacXLExample", "MacXLExample\MacXLExample.csproj", "{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iOSXLExample", "iOSXLExample\iOSXLExample.csproj", "{114D6318-06A1-44E0-BE8F-224B484A5756}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidXLExample", "AndroidXLExample\AndroidXLExample.csproj", "{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsXLExample", "WindowsXLExample\WindowsXLExample.csproj", "{FADE12D3-DA18-46A4-950B-285B3B66819D}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CppSharpSharedLibrary", "CppSharpSharedLibrary\CppSharpSharedLibrary.shproj", "{B06038E3-38E2-4FF5-ABEA-84DA3EC6700A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,18 @@ Global
 		Debug|iPhone = Debug|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Debug|x86.ActiveCfg = Debug|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Debug|x86.Build.0 = Debug|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Release|x86.ActiveCfg = Release|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Release|x86.Build.0 = Release|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Debug|iPhoneSimulator.Build.0 = Debug|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Release|iPhone.ActiveCfg = Release|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Release|iPhone.Build.0 = Release|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Release|iPhoneSimulator.ActiveCfg = Release|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Release|iPhoneSimulator.Build.0 = Release|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Debug|iPhone.ActiveCfg = Debug|x86
+		{ACF0E98E-A08D-470C-9548-9306C439099B}.Debug|iPhone.Build.0 = Debug|x86
 		{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}.Debug|x86.ActiveCfg = Debug|x86
 		{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}.Debug|x86.Build.0 = Debug|x86
 		{87B10C10-FAAB-4B83-8E59-E6D0026A4FBC}.Release|x86.ActiveCfg = Release|x86
@@ -57,17 +69,5 @@ Global
 		{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{3C6C1A9F-1621-481E-8DFB-4CCB5B6CF0D3}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|x86.ActiveCfg = Debug|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|x86.Build.0 = Debug|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|x86.ActiveCfg = Release|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|x86.Build.0 = Release|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhoneSimulator.ActiveCfg = Debug|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhoneSimulator.Build.0 = Debug|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhone.ActiveCfg = Release|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhone.Build.0 = Release|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhoneSimulator.ActiveCfg = Release|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Release|iPhoneSimulator.Build.0 = Release|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhone.ActiveCfg = Debug|x86
-		{FADE12D3-DA18-46A4-950B-285B3B66819D}.Debug|iPhone.Build.0 = Debug|x86
 	EndGlobalSection
 EndGlobal

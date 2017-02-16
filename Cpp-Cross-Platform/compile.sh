@@ -73,9 +73,10 @@ function windows_lib_build_command() {
     echo $MINGW_PREFIX
 
     cmake $CPP_LIBRARY\
-          -DCMAKE_INSTALL_PREFIX=$DESTDIR/$target\
+          -DCMAKE_INSTALL_PREFIX=$DESTDIR\
           -DCMAKE_DEBUG_POSTFIX=""\
-          -DCMAKE_TOOLCHAIN_FILE=$TOOLCHAINS/mingw.toolchain.cmake
+          -DCMAKE_TOOLCHAIN_FILE=$TOOLCHAINS/mingw64.cmake\
+          -DCMAKE_CXX_FLAGS="-static-libstdc++ -static-libgcc -Wl,--add-stdcall-alias"
 
     cmake --build . --target install
 }
@@ -107,4 +108,3 @@ build Android android_lib_build_command
 build Windows windows_lib_build_command
 
 rm -rf build
-
