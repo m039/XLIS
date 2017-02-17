@@ -1,3 +1,6 @@
 [submodule "Cpp-Cross-Platform/Toolchains/polly"]
 	path = Cpp-Cross-Platform/Toolchains/polly
 	url = https://github.com/ruslo/polly.git
+[submodule "Cpp-Swift-Interop/SwiftLibrary"]
+	path = Cpp-Swift-Interop/SwiftLibrary
+	url = https://github.com/m039/SwiftFooBarLibrary.git
