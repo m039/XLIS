@@ -1,4 +1,5 @@
 import SwiftFooBarLibrary
+import Foundation
 
 func testFoo() {
     let f = Foo()
@@ -8,13 +9,13 @@ func testFoo() {
     print("Foo.GetNumber: \(f.getNumber())")
     print("Foo.SetNumber(450)")
 
-    f.setNumber(450)
+    f.setFooNumber(450)
 
     print("Foo.number: \(f.number)")
     print("Foo.GetNumber: \(f.getNumber())")
 }
 
-class BarImpl : IBar {
+class BarImpl : NSObject, IBar {
     func getNumber() -> Int {
         return 1919
     }
