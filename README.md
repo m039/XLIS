@@ -1,6 +1,6 @@
 # Cross-Language Interaction Sandbox
 
-Various experiments with programming languages and platforms. All projects was tested on mac.
+Various experiments with programming languages and platforms. 
 
 ## Examples of cross-language polymorphism using C# and C++
 * `CSharp-Cpp-CppSharp`
@@ -10,5 +10,7 @@ Various experiments with programming languages and platforms. All projects was t
 ## Example in multiplatform environment
 * `Cpp-Cross-Platform` - example of using C++ with C# on iOS, Android, Windows and Mac.
 
-## Commentary
-`CppLibraryProject` is copy-pasted and slightly modified across the projects, to make it obvious which differences each approach has.
+## Commentaries
+- `CppLibraryProject` is copy-pasted and slightly modified across the projects, to make it obvious which differences each approach has.
+
+- All projects was tested on mac.
