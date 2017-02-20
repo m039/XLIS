@@ -1,6 +1,6 @@
 # C++ & C# Blackmire
 
-The C++ files were generated and rewrited manually, cause [Blackmire](https://github.com/ActiveMesa/Blackmire) in current state is far from being functional. 
+The C++ files were generated and rewrited manually, cause [Blackmire](https://github.com/ActiveMesa/Blackmire) in current state is far from being fully functional. 
 
 * `CSharpLibrary` - a core library.
 * `CppConsoleProject` is an example how to use the core library (same as `CSharp-Cpp-Interop/CppConsoleProject` but with shared_ptr).
