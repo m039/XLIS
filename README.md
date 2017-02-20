@@ -10,7 +10,7 @@ Various experiments with programming languages and platforms.
 * `CSharp-Cpp-SWIG`
 * `Cpp-CSharp-Blackmire`
 
-### C++ and Swift
+### Swift and C++ 
 * `ObjC-Swift-Interop`
 
 ## Example in multiplatform environment
