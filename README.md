@@ -4,7 +4,7 @@ Various experiments with programming languages and platforms.
 
 ## Examples of cross-language polymorphism
 
-First language in the name of a folder is a host language. For example, `CSharp-Cpp-Interop` means: "I want to use C++ in the C# enviroment".
+First language in the name of a folder is a host language. For example, `CSharp-Cpp-Interop` means: "I want to use C++ in a C# enviroment".
 
 ### C# and C++
 * `CSharp-Cpp-CppSharp`
