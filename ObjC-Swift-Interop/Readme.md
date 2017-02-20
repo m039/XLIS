@@ -8,5 +8,5 @@ Example how one may implement Swift interface in ObjC and pass it back to Swift.
 
 ## Notes
 
-- I would like to bypass ObjC/C++ and use SwiftLibrary directly in a C++ project, but looks like there are no options.
+- I would like to bypass ObjC/C++ and use SwiftLibrary directly in a C++ project, but it looks like there are no options.
 - Possibility to use Swift from ObjC/C++ (and vise-versa) is out of the box.
