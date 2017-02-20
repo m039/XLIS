@@ -8,6 +8,7 @@ Various experiments with programming languages and platforms.
 * `CSharp-Cpp-CppSharp`
 * `CSharp-Cpp-Interop`
 * `CSharp-Cpp-SWIG`
+* `Cpp-Sharp-Blackmire`
 
 ### C++ and Swift
 * `ObjC-Swift-Interop`
