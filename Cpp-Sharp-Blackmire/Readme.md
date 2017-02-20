@@ -6,7 +6,7 @@ The C++ files were generated and rewrited manually, cause [Blackmire](https://gi
 * `CppConsoleProject` is an example how to use the core library (same as `CSharp-Cpp-Interop/CppConsoleProject` but with shared_ptr).
 * `CppConsoleProject/unmodified` contains originally generated files by Blackmire.
 
-## Bugs or missed features
+## Blackmire's bugs or missed features
 - An interface is generated without virtual destructor.
 - Conditional statements (if/else) are not processed.
 - Missed includes: memory, cstdint.
