@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 #import <stdio.h>
 #import "SwiftFooBarLibrary.h"
+#import "main.hpp"
 
 void testFoo() {
     @autoreleasepool {
@@ -44,10 +45,3 @@ void testBar() {
     }
 }
 
-int main (int argc, const char * argv[]) {
-    testFoo();
-    printf("\n");
-    testBar();
-    
-    return 0;
-}

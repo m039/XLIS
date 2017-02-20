@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3411656B1E579BE30009E84D /* libSwiftFooBar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3411656A1E579BE30009E84D /* libSwiftFooBar.a */; };
-		341165731E579DAE0009E84D /* libswiftCore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 341165721E579DAE0009E84D /* libswiftCore.tbd */; settings = {ATTRIBUTES = (Required, ); }; };
+		341165771E57C1720009E84D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 341165751E57C1720009E84D /* main.cpp */; };
 		34BA0AB21E578A6100C08102 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BA0AB11E578A6100C08102 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -26,8 +26,9 @@
 
 /* Begin PBXFileReference section */
 		3411656A1E579BE30009E84D /* libSwiftFooBar.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.objfile"; name = libSwiftFooBar.a; path = ../Precompiled/libSwiftFooBar.a; sourceTree = "<group>"; };
-		341165721E579DAE0009E84D /* libswiftCore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftCore.tbd; path = System/Library/PrivateFrameworks/Swift/libswiftCore.tbd; sourceTree = SDKROOT; };
 		341165741E57A1BC0009E84D /* SwiftFooBarLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwiftFooBarLibrary.h; path = ../../Precompiled/SwiftFooBarLibrary.h; sourceTree = "<group>"; };
+		341165751E57C1720009E84D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		341165761E57C1720009E84D /* main.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		34BA0AAE1E578A6100C08102 /* ObjCConsoleProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCConsoleProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BA0AB11E578A6100C08102 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341165731E579DAE0009E84D /* libswiftCore.tbd in Frameworks */,
 				3411656B1E579BE30009E84D /* libSwiftFooBar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +67,8 @@
 			children = (
 				341165741E57A1BC0009E84D /* SwiftFooBarLibrary.h */,
 				34BA0AB11E578A6100C08102 /* main.m */,
+				341165751E57C1720009E84D /* main.cpp */,
+				341165761E57C1720009E84D /* main.hpp */,
 			);
 			path = ObjCConsoleProject;
 			sourceTree = "<group>";
@@ -74,7 +76,6 @@
 		34D860CF1E578C87005FEC83 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				341165721E579DAE0009E84D /* libswiftCore.tbd */,
 				3411656A1E579BE30009E84D /* libSwiftFooBar.a */,
 			);
 			name = Frameworks;
@@ -139,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34BA0AB21E578A6100C08102 /* main.m in Sources */,
+				341165771E57C1720009E84D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
