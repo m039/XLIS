@@ -19,4 +19,4 @@ The C++ files were generated and rewrited manually, cause [Blackmire](https://gi
 - Doesn't throw an error if C# code uses C++ keywoards like `register`.
 - Can't change default header suffix: h -> hpp.
 - Headers are included as `<Foo.h>`, not as `"Foo.h"`.
-- No "using namespace CSharpFooLibrary;" in cpp files.
+- No `using namespace CSharpFooLibrary;` in cpp files.
