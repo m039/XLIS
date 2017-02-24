@@ -1,4 +1,4 @@
-namespace CSharpFooBarLibrary 
+namespace CSharpFooBarLibrary
 {
     public class Foo {
 

@@ -4,7 +4,6 @@
 
 namespace CSharpFooBarLibrary {
   class Foo {
-
   public:
     int32_t number = 0;
 
@@ -12,4 +11,4 @@ namespace CSharpFooBarLibrary {
 
     void SetNumber(int32_t number);
   };
-} /* CSharpFooBarLibrary*/
+} /* CSharpFooBarLibrary */
