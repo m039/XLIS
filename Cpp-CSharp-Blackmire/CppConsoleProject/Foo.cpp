@@ -2,6 +2,9 @@
 
 using namespace CSharpFooBarLibrary;
 
+Foo::Foo() : number{0} {
+}
+
 int Foo::GetNumber()
 {
   return number;

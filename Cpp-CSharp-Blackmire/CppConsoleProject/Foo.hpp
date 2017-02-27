@@ -7,6 +7,8 @@ namespace CSharpFooBarLibrary {
   public:
     int32_t number = 0;
 
+    Foo();
+
     int GetNumber();
 
     void SetNumber(int32_t number);
