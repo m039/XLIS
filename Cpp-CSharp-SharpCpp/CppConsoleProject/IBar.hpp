@@ -6,10 +6,10 @@
 
 namespace CSharpFooBarLibrary {
   class IBar {
-  public:
-    virtual int32_t GetNumber() = 0;
+    public:
+      virtual int32_t GetNumber() = 0;
 
-    virtual ~IBar();
-    IBar();
+      virtual ~IBar();
+      IBar();
   };
 } // namespace CSharpFooBarLibrary
