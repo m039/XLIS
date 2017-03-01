@@ -11,6 +11,7 @@ First language in the name of a folder is a host language. For example, `CSharp-
 * `CSharp-Cpp-Interop`
 * `CSharp-Cpp-SWIG`
 * `Cpp-CSharp-Blackmire`
+* `Cpp-CSharp-SharpCpp`
 
 ### Swift and C++ 
 * `ObjC-Swift-Interop`
